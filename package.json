@@ -1,0 +1,35 @@
+{
+  "scripts": {
+    "webpack": "NODE_ENV=development webpack --watch",
+    "sass-watch": "sass --watch src/assets/styles/main_style.scss:public/css/style.css --style compressed",
+    "dev-server": "NODE_ENV=development nodemon server.js",
+    "start": "concurrently \"npm:dev-server\" \"npm:webpack\" \"npm:sass-watch\""
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.1.0",
+    "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "node-sass": "^5.0.0",
+    "path": "^0.12.7",
+    "pretty": "^2.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5",
+    "webpack": "^5.4.0",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "name": "react-ssr-demo",
+  "version": "1.0.0",
+  "main": "/server/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack-cli": "^4.2.0"
+  }
+}

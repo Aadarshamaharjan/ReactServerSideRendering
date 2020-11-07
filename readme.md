@@ -6,9 +6,9 @@ Server-side rendering (SSR), is the ability of an application to contribute by d
 
 Git clone the project. Then use following command.
 
-yarn install 
+yarn install :  
    this will install required npm packages.
 
-yarn start 
+yarn start :
    this will start the development server with sass webpack and server.
    Once if you have execute yarn start, if you haven't seen like server listing or localhost but you webpack buidl success. Re run the code, yarn start.  
